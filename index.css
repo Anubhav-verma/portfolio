@@ -1,8 +1,8 @@
 
 .my-container{
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-row: 4fr 3fr 4fr;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: 4fr 3fr 2fr;;
     background-color: #160d27;
 }
 
@@ -11,4 +11,11 @@
     justify-self: center;
     padding-top: 10%;
     padding-left: 60%;
+    padding-right: 10%;
+}
+
+.info-monitor{
+    grid-column: 2;
+    grid-row: 2;
+    
 }
