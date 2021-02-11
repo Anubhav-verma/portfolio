@@ -1,7 +1,8 @@
 
+
 .my-container{
     display: grid;
-    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-columns: 3fr 4fr 3fr;
     grid-template-rows: 4fr 3fr 2fr;;
     background-color: #160d27;
 }
@@ -19,3 +20,18 @@
     grid-row: 2;
     
 }
+
+.typewrite{
+    color:white;
+    text-decoration: none
+}
+
+/*body {
+    background-color:#ce3635;
+    text-align: center;
+    color:#fff;
+    padding-top:10em;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+
