@@ -2,15 +2,17 @@
 
 .my-container{
     display: grid;
-    grid-template-columns: 3fr 400px 3fr;
+    grid-template-columns: 3fr 3fr 400px;
     grid-template-rows: 50px 4fr 3fr 100px;;
     background-color: #160d27;
+    justify-content: stretch;
 }
 
 .nav{
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: blue;
+    border: white 2px;
+
 }
 
 .logo{
@@ -22,9 +24,10 @@
 }
 
 .info-monitor{
-    grid-column: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row: 3;
-    
+    justify-self: center;
 }
 
 .typewrite{

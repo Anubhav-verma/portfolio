@@ -28,7 +28,7 @@ function typeWriter(id) {
         }
     }
     element.innerHTML = '';
-}*/
+}https://codepen.io/hi-im-si/pen/DHoup*/
 
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
