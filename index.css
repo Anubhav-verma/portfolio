@@ -3,7 +3,7 @@
 .my-container{
     display: grid;
     grid-template-columns: 3fr 3fr 400px;
-    grid-template-rows: 50px 4fr 3fr 100px;;
+    grid-template-rows: 50px 250px 50px 3fr auto;
     background-color: #160d27;
     justify-content: stretch;
 }
@@ -23,10 +23,23 @@
     padding-right: 10%;
 }
 
+.linkedin{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: black;
+}
+
+.details-buttons{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    justify-self: start;
+}
+
 .info-monitor{
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row: 3;
+    grid-row: 4;
     justify-self: center;
 }
 
@@ -35,8 +48,15 @@
     text-decoration: none
 }
 
-.about-panel{
-    grid-column-start: 3;
+.about{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    justify-self: center;
+    height: 250px;
+}
+/*.about-panel{
+    grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;

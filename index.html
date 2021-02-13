@@ -18,7 +18,7 @@
 </head>
 
 <body class="my-container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav" style="border: white;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><b>Nav</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -77,6 +77,12 @@
         </div>
     </div>
     </div>
+    <div class="details-buttons">
+        <button class="btn btn-primary" type="button" onclick="showContent('Academics')">About Me</button>
+        <button class="btn btn-primary" type="button" onclick="showContent('Plan')">Plan</button>
+        <button class="btn btn-primary" type="button" onclick="showContent('Experience')">Experience</button>
+        <button class="btn btn-primary" type="button" onclick="showContent('Candy')">Candy</button>
+    </div>
     <div class="info-monitor card text-white bg-dark mb-3 border border-secondary border-3" style="min-width: 400px;">
         <div class="card-header">Developer in Process 🖥</div>
         <div class="card-body">
@@ -88,6 +94,14 @@
                 </a></h2>
         </div>
     </div>
+    <div class="card text-white bg-dark mb-3 about" style="min-width: 400px;">
+        <div class="card-header" id="card-header"></div>
+        <div class="card-body">
+            <h5 class="card-title" id="card-title"></h5>
+            <p class="card-text" id="card-text">Press the buttons to know more about me</p>
+        </div>
+    </div>
+
     <div class=""></div>
     <!-- Optional JavaScript; choose one of the two! -->
 

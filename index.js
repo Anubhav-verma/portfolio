@@ -86,3 +86,39 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+function showContent(id) {
+    card_header = document.getElementById("card-header")
+    card_title = document.getElementById("card-title")
+    card = document.getElementById("card-text")
+
+    switch (id) {
+        case "Academics":
+            card_header.innerHTML = 'My self can be'
+            card_title.innerHTML = 'Described as'
+            card.innerHTML = 'An Electrical Engineer ' +
+                'who is passionate about coding ' +
+                'and Data management.'
+            break;
+        case "Plan":
+            card_header.innerHTML = 'The Plan is'
+            card_title.innerHTML = 'To learn'
+            card.innerHTML = 'More and more skills ' +
+                'and utilize them to create ' +
+                'something valuable.'
+            break;
+        case "Experience":
+            card_header.innerHTML = 'Skills that are'
+            card_title.innerHTML = 'In the Bucket'
+            card.innerHTML = 'Automation Script writer in Robot Framework <br>' +
+                'A Business Analyst <br>' +
+                'An SQL Developer <br>' +
+                'A little hands on Web development'
+            break;
+        case "Candy":
+            card_header.innerHTML += ' 🍬 '
+
+            break;
+
+    }
+}
