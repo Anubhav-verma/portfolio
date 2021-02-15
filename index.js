@@ -122,3 +122,23 @@ function showContent(id) {
 
     }
 }
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "garudbot@gmail.com",
+        Password: "Qwertypasta@2",
+        To: 'ianubhavverma@gmail.com',
+        From: "garudbot@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+        Attachments: [
+            {
+                name: "File_Name_with_Extension",
+                path: "Full Path of the file"
+            }]
+    })
+        .then(function (message) {
+            alert("Mail has been sent successfully")
+        });
+} 
