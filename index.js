@@ -1,35 +1,3 @@
-/*for (var i = 0; i < 5; i++) {
-    console.log("Outer Loop")
-    showContent("card-text")
-}
-
-function showContent(classname) {
-    var elements = document.getElementsByClassName(classname);
-    console.log(elements.length)
-    for (let j = 0; j <= elements.length; j++) {
-        console.log("First Inner Loop")
-        typeWriter(elements[j].id)
-    }
-}
-
-function typeWriter(id) {
-    var i = 0;
-    var element = document.getElementById(id);
-    var txt = element.innerHTML;
-    element.innerHTML = '';
-    element.style.display = 'block'
-    var speed = 70;
-    type();
-    function type() {
-        if (i < txt.length) {
-            element.innerHTML += txt.charAt(i);
-            i++
-            setTimeout(type, speed);
-        }
-    }
-    element.innerHTML = '';
-}https://codepen.io/hi-im-si/pen/DHoup*/
-
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
